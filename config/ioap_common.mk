@@ -10,9 +10,6 @@ PRODUCT_COPY_FILES += \
     vendor/ioap/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/ioap/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh
 
-# T-Mobile theme engine
-include vendor/ioap/config/themes_common.mk
-
 # Screen recorder
 PRODUCT_PACKAGES += \
     libscreenrecorder \
@@ -55,11 +52,10 @@ PRODUCT_COPY_FILES += \
 
 # OmniRom Packages
 PRODUCT_PACKAGES += \
-    PerformanceControl \
-    OmniSwitch
+    OmniSwitch \
 
-# PAC Overlays
-PRODUCT_PACKAGE_OVERLAYS += vendor/pac/overlay/pac/common
+# Overlays
+PRODUCT_PACKAGE_OVERLAYS += vendor/ioap/overlay/ioap/common
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
@@ -86,38 +82,19 @@ PRODUCT_COPY_FILES += \
     vendor/ioap/prebuilt/pa/$(PA_CONF_SOURCE).conf:system/etc/paranoid/properties.conf \
     vendor/ioap/prebuilt/pa/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf
 
-# ParanoidAndroid Preferences
-PA_PREF_FILES := $(wildcard vendor/ioap/prebuilt/pa/preferences/$(PA_CONF_SOURCE)/*.xml)
-PRODUCT_COPY_FILES += \
-    $(foreach f,$(PA_PREF_FILES),$(f):system/etc/paranoid/preferences/$(notdir $(f)))
-
 BOARD := $(subst IOAP_,,$(TARGET_PRODUCT))
 
 # Add CM release version
 CM_RELEASE := true
 CM_BUILD := $(BOARD)
 
-# Add PA release version
-PA_VERSION_MAJOR = 4
-PA_VERSION_MINOR = 0
-PA_VERSION_MAINTENANCE =
-PA_PREF_REVISION = BETA4
-VERSION := $(PA_VERSION_MAJOR).$(PA_VERSION_MINOR)$(PA_VERSION_MAINTENANCE)
-PA_VERSION := pa_$(BOARD)-$(VERSION)-$(shell date +%0d%^b%Y-%H%M%S)
-
 # IOAP version
-IOAP_VERSION_MAJOR = v3.62
-# IOAP_VERSION_MINOR = 
-# IOAP_VERSION_MAINTENANCE = Beta 3
+IOAP_VERSION_MAJOR = v4.00
 IOAP_VERSION := $(IOAP_VERSION_MAJOR)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ioap.version=$(IOAP_VERSION) \
     ro.infamous.version=$(BOARD)_$(IOAP_VERSION)_$(shell date +%Y%m%d-%H%M%S) \
-    ro.modversion=$(PA_VERSION) \
-    ro.pa.family=$(PA_CONF_SOURCE) \
-    ro.pa.version=$(VERSION) \
-    ro.papref.revision=$(PA_PREF_REVISION) \
-    ro.aokp.version=$(BOARD)_kitkat
+
 
 

@@ -1,12 +1,21 @@
+# Acer
+add_lunch_combo ioap_a510-userdebug
+add_lunch_combo ioap_a700-userdebug
 # Amazon
 add_lunch_combo ioap_otter-userdebug
 add_lunch_combo ioap_otter2-userdebug
+add_lunch_combo ioap_otterx-userdebug
 add_lunch_combo ioap_tate-userdebug
 add_lunch_combo ioap_jem-userdebug
 # Asus device
 add_lunch_combo ioap_tf201-userdebug
 add_lunch_combo ioap_tf300t-userdebug
 add_lunch_combo ioap_tf700t-userdebug
+add_lunch_combo ioap_tf701t-userdebug
+# Barnes & Noble
+add_lunch_combo ioap_acclaim-userdebug
+add_lunch_combo ioap_encore-userdebug
+add_lunch_combo ioap_ovation-userdebug
 # HTC
 add_lunch_combo ioap_dlx-userbebug
 add_lunch_combo ioap_fireball-userdebug
@@ -16,13 +25,16 @@ add_lunch_combo ioap_evita-userdebug
 add_lunch_combo ioap_glacier-userdebug
 add_lunch_combo ioap_holiday-userdebug
 add_lunch_combo ioap_jewel-userdebug
+add_lunch_combo ioap_m4-userdebug
 add_lunch_combo ioap_m7-userdebug
 add_lunch_combo ioap_m7spr-userdebug
 add_lunch_combo ioap_m7vzw-userdebug
+add_lunch_combo ioap_m8-userdebug
 add_lunch_combo ioap_pyramid-userdebug
 add_lunch_combo ioap_ruby-userdebug
 add_lunch_combo ioap_ville-userdebug
 add_lunch_combo ioap_villec2-userdebug
+add_lunch_combo ioap_vision-userdebug
 # Huawei
 add_lunch_combo ioap_u8833-userdebug
 add_lunch_combo ioap_u8860-userdebug
@@ -38,6 +50,8 @@ add_lunch_combo ioap_e975-userdebug
 add_lunch_combo ioap_e980-userdebug
 add_lunch_combo ioap_ls970-userdebug
 add_lunch_combo ioap_ls980-userdebug
+add_lunch_combo ioap_p500-userdebug
+add_lunch_combo ioap_p705-userdebug
 add_lunch_combo ioap_p760-userdebug
 add_lunch_combo ioap_p880-userdebug
 add_lunch_combo ioap_p930-userdebug
@@ -71,6 +85,7 @@ add_lunch_combo ioap_find5-userdebug
 add_lunch_combo ioap_n1-userdebug
 # Samsung
 add_lunch_combo ioap_apexqtmo-userdebug
+add_lunch_combo ioap_ariesve-userdebug
 add_lunch_combo ioap_codina-userdebug
 add_lunch_combo ioap_captivatemtd-userdebug
 add_lunch_combo ioap_d2lte-userdebug
@@ -86,6 +101,7 @@ add_lunch_combo ioap_hercules-userdebug
 add_lunch_combo ioap_hlte-userdebug
 add_lunch_combo ioap_i605-userdebug
 add_lunch_combo ioap_i777-userdebug
+add_lunch_combo ioap_i9082-userdebug
 add_lunch_combo ioap_i9100-userdebug
 add_lunch_combo ioap_i9100g-userdebug
 add_lunch_combo ioap_i925-userdebug
@@ -127,6 +143,8 @@ add_lunch_combo ioap_t769-userdebug
 add_lunch_combo ioap_venturi-userdebug
 add_lunch_combo ioap_ypg1-userdebug
 # Sony
+add_lunch_combo ioap_amami-userdebug
+add_lunch_combo ioap_dogo-userdebug
 add_lunch_combo ioap_honami-userdebug
 add_lunch_combo ioap_huashan-userdebug
 add_lunch_combo ioap_mint-userdebug
@@ -134,6 +152,7 @@ add_lunch_combo ioap_nicki-userdebug
 add_lunch_combo ioap_odin-userdebug
 add_lunch_combo ioap_pollux-userdebug
 add_lunch_combo ioap_pollux_windy-userdebug
+add_lunch_combo ioap_taoshan-userdebug
 add_lunch_combo ioap_tsubasa-userdebug
 add_lunch_combo ioap_togari-userdebug
 add_lunch_combo ioap_togari_gpe-userdebug
