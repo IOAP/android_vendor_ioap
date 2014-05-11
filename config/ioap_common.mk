@@ -4,6 +4,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=Proxima.ogg \
     ro.config.alarm_alert=Cesium.ogg
 
+# Copy specific ROM files
+#PRODUCT_COPY_FILES += \
+#    vendor/ioap/prebuilt/common/apk/QuickBoot.apk:system/app/QuickBoot.apk
+
+#Copy Theme Apks
+PRODUCT_COPY_FILES += \
+    vendor/ioap/prebuilt/common/apk/Smoke.apk:system/app/Smoke.apk
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/ioap/prebuilt/common/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh \
